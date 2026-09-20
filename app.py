@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+import joblib
 
 model = joblib.load("loan_approval_decision_tree.pkl")
 
