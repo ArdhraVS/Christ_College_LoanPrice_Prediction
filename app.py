@@ -13,7 +13,7 @@ if st.button("Predict Loan Approval"):
 
     prediction = model.predict([[income, credit_score]])
 
-    if prediction[0] == 1:
+    if prediction[0] == "YES":
         st.success("Loan Approved")
     else:
         st.error("Loan Not Approved")
