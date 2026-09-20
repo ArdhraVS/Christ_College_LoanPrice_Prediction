@@ -3,6 +3,7 @@ import pickle
 
 with open("loan_approval_decision_tree.pkl", "rb") as file:
     model = pickle.load(file)
+model = joblib.load("loan_approval_decision_tree.pkl")
 
 st.title("Loan Approval Prediction")
 st.subheader("Decision Tree")
